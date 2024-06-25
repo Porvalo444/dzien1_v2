@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "dzien1v2_backend": {
+      "candid": "src/dzien1v2_backend/dzien1v2_backend.did",
+      "package": "dzien1v2_backend",
+      "type": "rust"
+    },
+    "dzien1v2_frontend": {
+      "dependencies": [
+        "dzien1v2_backend"
+      ],
+      "source": [
+        "src/dzien1v2_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dzien1v2_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
